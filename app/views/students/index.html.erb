@@ -1,7 +1,9 @@
-<div>
+<h1>These are all the students</h1>
+<ul>
   <% @students.each do |student| %>
-    <div><%= link_to student, "/students/#{student.id}" %></div>
+  <li><%= link_to student.to_s, student_path(student) %></li>
+    
   <% end %>
-</div>
+</ul>
 
 
