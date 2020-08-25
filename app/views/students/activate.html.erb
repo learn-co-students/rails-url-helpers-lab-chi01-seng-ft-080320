@@ -1,0 +1,15 @@
+
+
+
+<% if @student.active %>
+    <p><%= @student.first_name %> Now active</p>
+<% else %>
+    <p><%= @student.first_name %> Now inactive</p>
+<% end %>
+
+<div><%= link_to(@student.to_s, student_path(@student))%></div>
+
+
+
+
+
