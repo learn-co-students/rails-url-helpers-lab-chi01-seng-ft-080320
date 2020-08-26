@@ -5,8 +5,12 @@
 
 <% if @student.active == false %>
 <%= "This student is currently inactive." %>
+<%= link_to "Activate", activate_student_path %> <%# students/:id/activate %>
 <% else %>
 <%= "This student is currently active." %>
+<%= link_to "Deactivate", activate_student_path %> <%# students/:id/activate %>
 <% end %>
 
-<%= link_to "Activate", activate_student_path %>
+
+
+
