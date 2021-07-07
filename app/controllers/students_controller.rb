@@ -6,6 +6,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    @student_bio = Student.find(params[:id])
   end
 
   private
